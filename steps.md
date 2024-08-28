@@ -46,5 +46,7 @@ sudo nano /etc/passwd
 
 ```sh
 sudo nano /etc/vsftpd_user_conf/newuser
+##### Paste below line inside the file and save the file
+
 local_root=/var/www/home
 ```
