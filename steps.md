@@ -31,14 +31,13 @@ pasv_address=YOUR_SERVER_IP
 #### Restart VSFTPD
 service vsftpd restart
 ```
-//////////
-
-
-//////// CREATE ROOT USER /////////////
+NOW CREATE ROOT USER THAT POINTS TO DIRECTORY /var/www/hom PATH (You may specify your own path) /////////////
+```sh
 sudo useradd -d /var/www/home -s /bin/bash rootuser
 echo 'rootuser:India12!@' | sudo chpasswd 
 sudo chown -R rootuser:rootuser /var/www/home
 sudo chmod -R 755 /var/www/home
+```
 sudo nano /etc/passwd
 sudo nano /etc/vsftpd_user_conf/rootuser
 local_root=/var/www/home
