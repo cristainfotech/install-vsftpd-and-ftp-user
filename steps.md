@@ -1,9 +1,10 @@
 ### INSTALL FTP ON UBUNTU VPS
 
-
+```sh
 apt update
 apt upgrade
-- INSTALL VSFTPD
+```
+- Install VSFTPD
 ```sh
 apt install vsftpd
 ```
