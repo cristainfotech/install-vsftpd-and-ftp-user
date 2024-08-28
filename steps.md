@@ -15,7 +15,7 @@ pasv_max_port=10100
 user_sub_token=$USER
 user_config_dir=/etc/vsftpd_user_conf
 allow_writeable_chroot=YES
-pasv_address=74.208.17.193
+pasv_address=YOUR_SERVER_IP
 
 service vsftpd restart
 
