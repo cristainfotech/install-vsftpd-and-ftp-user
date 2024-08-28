@@ -3,9 +3,10 @@
 
 apt update
 apt upgrade
-////INSTALL VSFTPD ///
-
+- INSTALL VSFTPD
+```sh
 apt install vsftpd
+```
 nano /etc/vsftpd.conf
 // write below inside vsftpd.conf
 local_umask=022
