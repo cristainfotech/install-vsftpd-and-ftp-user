@@ -14,6 +14,7 @@ apt install vsftpd
 nano /etc/vsftpd.conf
 ```
 #### Uncomment or write below lines inside vsftpd.conf
+```sh
 local_umask=022
 local_enable=YES
 write_enable=YES
@@ -25,10 +26,11 @@ user_sub_token=$USER
 user_config_dir=/etc/vsftpd_user_conf
 allow_writeable_chroot=YES
 pasv_address=YOUR_SERVER_IP
-
+```
+```sh
 #### Restart VSFTPD
 service vsftpd restart
-
+```
 //////////
 
 
