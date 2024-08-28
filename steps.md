@@ -8,7 +8,11 @@ apt upgrade
 ```sh
 apt install vsftpd
 ```
+#### Now need to edit configration file
+
+```sh
 nano /etc/vsftpd.conf
+```
 // write below inside vsftpd.conf
 local_umask=022
 local_enable=YES
