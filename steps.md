@@ -33,11 +33,18 @@ service vsftpd restart
 ```
 NOW CREATE ROOT USER THAT POINTS TO DIRECTORY /var/www/hom PATH (You may specify your own path) /////////////
 ```sh
-sudo useradd -d /var/www/home -s /bin/bash rootuser
-echo 'rootuser:India12!@' | sudo chpasswd 
-sudo chown -R rootuser:rootuser /var/www/home
+sudo useradd -d /var/www/home -s /bin/bash newuser
+echo 'newuser:YourPassword' | sudo chpasswd 
+sudo chown -R newuser:newuser /var/www/home
 sudo chmod -R 755 /var/www/home
 ```
+#### Edit passwd file and verify user entry at the end (Optional)
+```sh
 sudo nano /etc/passwd
-sudo nano /etc/vsftpd_user_conf/rootuser
+```
+#### Create user specific file to specify directory path where user will point
+
+```sh
+sudo nano /etc/vsftpd_user_conf/newuser
 local_root=/var/www/home
+```
