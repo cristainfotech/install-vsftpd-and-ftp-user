@@ -13,7 +13,7 @@ apt install vsftpd
 ```sh
 nano /etc/vsftpd.conf
 ```
-// write below inside vsftpd.conf
+#### Uncomment or write below lines inside vsftpd.conf
 local_umask=022
 local_enable=YES
 write_enable=YES
@@ -26,6 +26,7 @@ user_config_dir=/etc/vsftpd_user_conf
 allow_writeable_chroot=YES
 pasv_address=YOUR_SERVER_IP
 
+#### Restart VSFTPD
 service vsftpd restart
 
 //////////
