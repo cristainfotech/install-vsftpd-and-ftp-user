@@ -1,16 +1,6 @@
-### INSTALL FTP ON UBUNTU VPS
+#### Generate Key
 
-```sh
-apt update
-apt upgrade
-```
-- Install VSFTPD
-```sh
-apt install vsftpd
-```
-#### Now need to edit configration file
-
-
+- generate the keys using the command below:
 ```ssh-keygen -t rsa -b 4096 -C "your_email@example.com"```
 
 ```$private_key_path = '/var/www/.ssh/id_rsa';
