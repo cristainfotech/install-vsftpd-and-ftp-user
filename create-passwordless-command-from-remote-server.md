@@ -1,7 +1,20 @@
-`ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+### INSTALL FTP ON UBUNTU VPS
 
-`$private_key_path = '/var/www/.ssh/id_rsa';`
-`$public_key_path = '/var/www/.ssh/id_rsa.pub';`
+```sh
+apt update
+apt upgrade
+```
+- Install VSFTPD
+```sh
+apt install vsftpd
+```
+#### Now need to edit configration file
+
+
+```ssh-keygen -t rsa -b 4096 -C "your_email@example.com"```
+
+```$private_key_path = '/var/www/.ssh/id_rsa';
+$public_key_path = '/var/www/.ssh/id_rsa.pub';```
 
 `$remote_server_ip = '103.76.122.71';`
 `$remote_username = 'root';`
