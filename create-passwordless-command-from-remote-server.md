@@ -1,7 +1,9 @@
 #### Generate Key
 
 - generate the keys using the command below:
-```ssh-keygen -t rsa -b 4096 -C "your_email@example.com"```
+```sh
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
 
 ```$private_key_path = '/var/www/.ssh/id_rsa';
 $public_key_path = '/var/www/.ssh/id_rsa.pub';```
