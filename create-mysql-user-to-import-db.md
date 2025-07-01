@@ -11,6 +11,6 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON *.* TO 'root2'@'localhost';```
 FLUSH PRIVILEGES;
 ```
 ```sh
-mysql -u dbadmin -p 
+mysql -u root2 -p 
 CREATE DATABASE testdb;
 DROP DATABASE testdb;
